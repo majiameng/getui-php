@@ -17,7 +17,7 @@
 
 ## 安装
 ```shell
-composer require laoqianjunzi/getui
+composer require tinymeng/getui
 ```
 
 ### 普通调用
@@ -31,17 +31,17 @@ composer require laoqianjunzi/getui
 
 ```php
 
-use getui\GeTui;
-  $config=[
-            'package'         => 'com.xxx.xxx', // APP
-            'app_id'        => '必填', // APPID
-            'app_key'       => '必填', // APPKEY
-            'master_secret' => '必填',//MASTERSECRET
-    ];
-       return app()->make(GeTui::class)->initParams($config)->pushSingleByCid('这是标题', '内容', ['url'=>'点击跳转路径'], 'clientid');
+use tinymeng\getui\GeTui;
+$config=[
+    'package'         => 'com.xxx.xxx', // APP
+    'app_id'        => '必填', // APPID
+    'app_key'       => '必填', // APPKEY
+    'master_secret' => '必填',//MASTERSECRET
+];
+return app()->make(GeTui::class)->initParams($config)->pushSingleByCid('这是标题', '内容', ['url'=>'点击跳转路径'], 'clientid');
+```
 
-
-
+```
 function pushToSingleByCid(){
 	//创建API，APPID等配置参考 环境要求 进行获取
     $api = new GTClient("https://restapi.getui.com","APPKEY", "APPID","MASTERSECRET");
