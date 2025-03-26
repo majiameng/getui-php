@@ -142,4 +142,6 @@ function queryUserStatus(){
 
 
 ## 其他链接
+本项目借鉴了以下开源项目并进行优化兼容php更高版本，
 
+https://github.com/GetuiLaboratory/getui-pushapi-php-client-v2
