@@ -1,0 +1,52 @@
+{
+    "name": "tinymeng/getui",
+    "description": "个推推送，提供安卓(Android)和iOS推送SDK，为App开发者提供高效稳定推送技术服",
+    "keywords": [
+        "getui",
+        "个推",
+        "uniapp",
+        "thinkphp",
+        "消息推送",
+        "推送SDK",
+        "安卓推送",
+        "推送服务",
+        "免费推送"
+    ],
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/majiameng/getui-php/issues",
+        "source": "https://github.com/majiameng/getui-php"
+    },
+    "authors": [
+        {
+            "name": "JiaMeng Ma",
+            "email": "666@majiameng.com",
+            "homepage": "https://www.majiameng.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "tinymeng/tools": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "tinymeng\\getui\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tinymeng\\getui\\Test\\": "test"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "getui": "src/config/getui.php"
+            }
+        }
+    },
+    "license": "MIT"
+}
